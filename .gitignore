@@ -8,7 +8,7 @@ node_modules/
 
 # Allure
 /allure-results/
-/allure-report/
+# /allure-report/ - Not ignored, needed for GitHub Pages
 
 # Environment variables
 .env

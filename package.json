@@ -1,10 +1,19 @@
 {
   "name": "playwright",
   "version": "1.0.0",
-  "description": "",
+  "description": "Playwright test automation with MCP integration",
   "main": "index.js",
-  "scripts": {},
-  "keywords": [],
+  "type": "module",
+  "scripts": {
+    "test": "npx playwright test",
+    "test:login": "npx playwright test Tests/LoginTests/ --project=chromium",
+    "test:dashboard": "npx playwright test Tests/DashboardTests/ --project=chromium",
+    "test:connection": "npx playwright test Tests/AddStandaloneConnectionTests/ --project=chromium",
+    "report": "npx allure generate allure-results --clean -o allure-report && npx allure open allure-report",
+    "mcp:server": "node mcp/playwright-server.js",
+    "mcp:client": "node mcp/mcp-client.js"
+  },
+  "keywords": ["playwright", "testing", "mcp", "automation"],
   "author": "",
   "license": "ISC",
   "devDependencies": {
@@ -16,6 +25,8 @@
     "playwright-qase-reporter": "^2.1.7"
   },
   "dependencies": {
-    "@anthropic-ai/sdk": "^0.71.2"
+    "@anthropic-ai/sdk": "^0.71.2",
+    "@modelcontextprotocol/sdk": "^1.25.3",
+    "zod": "^4.3.5"
   }
 }

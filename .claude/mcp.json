@@ -1,0 +1,9 @@
+{
+  "mcpServers": {
+    "playwright": {
+      "command": "node",
+      "args": ["mcp/playwright-server.js"],
+      "cwd": "/Users/snehal.dhanwade/playwright-js"
+    }
+  }
+}
