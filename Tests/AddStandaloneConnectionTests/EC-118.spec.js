@@ -28,10 +28,25 @@ async function openAddStandaloneForm(page) {
     await page.waitForTimeout(2000);
   }
 
-  const addStandaloneBtn = page.locator('button:has-text("Add Standalone"), a:has-text("Add Standalone"), button:has-text("Standalone")').first();
-  if (await addStandaloneBtn.count() > 0) {
-    await addStandaloneBtn.click();
-    await page.waitForTimeout(1000);
+  // Click "Add New Connection" button
+  const addNewConnectionBtn = page.locator('button:has-text("Add New Connection")').first();
+  if (await addNewConnectionBtn.count() > 0) {
+    await addNewConnectionBtn.click();
+    await page.waitForTimeout(2000);
+
+    // Select Epic EHR system
+    const selectEpicBtn = page.locator('button:has-text("Select Epic")').first();
+    if (await selectEpicBtn.count() > 0) {
+      await selectEpicBtn.click();
+      await page.waitForTimeout(2000);
+
+      // Select "Standalone" connection type
+      const standaloneOption = page.locator('button:has-text("Standalone"), div:has-text("Standalone"), [class*="card"]:has-text("Standalone")').first();
+      if (await standaloneOption.count() > 0) {
+        await standaloneOption.click();
+        await page.waitForTimeout(1000);
+      }
+    }
   }
 }
 
@@ -46,7 +61,7 @@ test(qase(118, 'EC-118: Check whether user is able to see EHR System dropdown or
     await expect(ehrDropdown).toBeVisible();
   } else {
     // Check for EHR label or dropdown component
-    const ehrLabel = page.locator('label:has-text("EHR"), text=EHR System, text=EHR').first();
+    const ehrLabel = page.locator('label:has-text("EHR System")').first();
     await expect(ehrLabel).toBeVisible();
   }
 });
