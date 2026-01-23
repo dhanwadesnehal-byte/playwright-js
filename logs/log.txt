@@ -1,0 +1,24 @@
+[2026-01-22T11:23:19.778Z] [DEBUG] qase: Config: {"configDir":"/Users/snehal.dhanwade/playwright-js","_mode":"test","_commandHash":"chromium-04de324","mode":"testops","debug":true,"testops":{"api":{},"uploadAttachments":true,"run":{"complete":true,"title":"Login Page Automated Tests","tags":[]},"plan":{},"batch":{}},"frameworkPackage":"@playwright/test","frameworkName":"playwright","reporterName":"playwright-qase-reporter","report":{"connections":{"local":{}}}}
+[2026-01-22T11:23:19.849Z] [DEBUG] qase: Host data: {"system":"darwin","machineName":"mblt1082","release":"24.5.0","version":"15.5","arch":"arm64","node":"v22.21.1","npm":"10.9.4","framework":"1.57.0","reporter":"2.1.7","commons":"2.4.16","apiClientV1":"1.1.1","apiClientV2":"1.0.4"}
+[2026-01-22T11:23:19.850Z] [ERROR] qase: Unable to create upstream reporter:
+ Error: Either "testops.api.token" parameter or "QASE_TESTOPS_API_TOKEN" environment variable is required in "testops" mode
+    at QaseReporter.createReporter (/Users/snehal.dhanwade/playwright-js/node_modules/qase-javascript-commons/dist/qase.js:447:27)
+    at new QaseReporter (/Users/snehal.dhanwade/playwright-js/node_modules/qase-javascript-commons/dist/qase.js:102:42)
+    at Function.getInstance (/Users/snehal.dhanwade/playwright-js/node_modules/qase-javascript-commons/dist/qase.js:287:37)
+    at new PlaywrightQaseReporter (/Users/snehal.dhanwade/playwright-js/node_modules/playwright-qase-reporter/dist/reporter.js:264:64)
+    at createReporters (/Users/snehal.dhanwade/playwright-js/node_modules/playwright/lib/runner/reporters.js:74:62)
+    at runAllTestsWithConfig (/Users/snehal.dhanwade/playwright-js/node_modules/playwright/lib/runner/testRunner.js:365:21)
+    at runTests (/Users/snehal.dhanwade/playwright-js/node_modules/playwright/lib/program.js:242:18)
+    at r.<anonymous> (/Users/snehal.dhanwade/playwright-js/node_modules/playwright/lib/program.js:70:7)
+[2026-01-23T07:59:31.272Z] [DEBUG] qase: Config: {"configDir":"/Users/snehal.dhanwade/playwright-js","_mode":"test","_commandHash":"e0393b1","mode":"testops","debug":true,"testops":{"api":{},"uploadAttachments":true,"run":{"complete":true,"title":"Login Page Automated Tests","tags":[]},"plan":{},"batch":{}},"frameworkPackage":"@playwright/test","frameworkName":"playwright","reporterName":"playwright-qase-reporter","report":{"connections":{"local":{}}}}
+[2026-01-23T07:59:31.341Z] [DEBUG] qase: Host data: {"system":"darwin","machineName":"mblt1082","release":"24.5.0","version":"15.5","arch":"arm64","node":"v22.21.1","npm":"10.9.4","framework":"1.57.0","reporter":"2.1.7","commons":"2.4.16","apiClientV1":"1.1.1","apiClientV2":"1.0.4"}
+[2026-01-23T07:59:31.341Z] [ERROR] qase: Unable to create upstream reporter:
+ Error: Either "testops.api.token" parameter or "QASE_TESTOPS_API_TOKEN" environment variable is required in "testops" mode
+    at QaseReporter.createReporter (/Users/snehal.dhanwade/playwright-js/node_modules/qase-javascript-commons/dist/qase.js:447:27)
+    at new QaseReporter (/Users/snehal.dhanwade/playwright-js/node_modules/qase-javascript-commons/dist/qase.js:102:42)
+    at Function.getInstance (/Users/snehal.dhanwade/playwright-js/node_modules/qase-javascript-commons/dist/qase.js:287:37)
+    at new PlaywrightQaseReporter (/Users/snehal.dhanwade/playwright-js/node_modules/playwright-qase-reporter/dist/reporter.js:264:64)
+    at createReporters (/Users/snehal.dhanwade/playwright-js/node_modules/playwright/lib/runner/reporters.js:74:62)
+    at runAllTestsWithConfig (/Users/snehal.dhanwade/playwright-js/node_modules/playwright/lib/runner/testRunner.js:365:21)
+    at runTests (/Users/snehal.dhanwade/playwright-js/node_modules/playwright/lib/program.js:242:18)
+    at r.<anonymous> (/Users/snehal.dhanwade/playwright-js/node_modules/playwright/lib/program.js:70:7)
