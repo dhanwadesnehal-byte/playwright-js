@@ -1,0 +1,1 @@
+Form has 1 input fields (validation may be implicit)
