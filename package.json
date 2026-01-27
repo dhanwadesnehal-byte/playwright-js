@@ -13,7 +13,12 @@
     "mcp:server": "node mcp/playwright-server.js",
     "mcp:client": "node mcp/mcp-client.js"
   },
-  "keywords": ["playwright", "testing", "mcp", "automation"],
+  "keywords": [
+    "playwright",
+    "testing",
+    "mcp",
+    "automation"
+  ],
   "author": "",
   "license": "ISC",
   "devDependencies": {

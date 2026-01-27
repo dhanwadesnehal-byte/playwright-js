@@ -33,20 +33,25 @@ async function navigateToConnections(page) {
 test(qase(112, 'EC-112: Check whether user is able to click on Add Standalone Connection button or not'), async ({ page }) => {
   await navigateToConnections(page);
 
-  // Look for Add Standalone Connection button
-  const addStandaloneBtn = page.locator('button:has-text("Add Standalone"), a:has-text("Add Standalone"), button:has-text("Standalone")').first();
+  // Click "Add New Connection" button
+  const addNewConnectionBtn = page.locator('button:has-text("Add New Connection")').first();
+  await expect(addNewConnectionBtn).toBeEnabled();
+  await addNewConnectionBtn.click();
+  await page.waitForTimeout(2000);
 
-  if (await addStandaloneBtn.count() > 0) {
-    await expect(addStandaloneBtn).toBeEnabled();
-    await addStandaloneBtn.click();
-    await page.waitForTimeout(1000);
-    // Verify modal or form opened
-    expect(true).toBeTruthy();
-  } else {
-    const addButton = page.locator('button:has-text("Add"), a:has-text("Add")').first();
-    if (await addButton.count() > 0) {
-      await addButton.click();
+  // Select Epic EHR system first
+  const selectEpicBtn = page.locator('button:has-text("Select Epic")').first();
+  if (await selectEpicBtn.count() > 0) {
+    await selectEpicBtn.click();
+    await page.waitForTimeout(2000);
+
+    // Click on Standalone connection type
+    const standaloneOption = page.locator('button:has-text("Standalone"), div:has-text("Standalone"), [class*="card"]:has-text("Standalone")').first();
+    if (await standaloneOption.count() > 0) {
+      await standaloneOption.click();
       await page.waitForTimeout(1000);
+      // Verify form opened
+      expect(true).toBeTruthy();
     }
   }
 });

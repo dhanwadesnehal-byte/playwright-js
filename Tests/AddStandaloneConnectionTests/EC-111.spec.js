@@ -33,14 +33,7 @@ async function navigateToConnections(page) {
 test(qase(111, 'EC-111: Check whether user is able to see Add Standalone Connection button or not'), async ({ page }) => {
   await navigateToConnections(page);
 
-  // Look for Add Standalone Connection button
-  const addStandaloneBtn = page.locator('button:has-text("Add Standalone"), a:has-text("Add Standalone"), button:has-text("Standalone"), text=Add Standalone Connection').first();
-
-  if (await addStandaloneBtn.count() > 0) {
-    await expect(addStandaloneBtn).toBeVisible();
-  } else {
-    // Check for any Add button on connections page
-    const addButton = page.locator('button:has-text("Add"), a:has-text("Add")').first();
-    await expect(addButton).toBeVisible();
-  }
+  // Look for "Add New Connection" button (which opens a menu to select connection type including Standalone)
+  const addNewConnectionBtn = page.locator('button:has-text("Add New Connection")').first();
+  await expect(addNewConnectionBtn).toBeVisible();
 });
