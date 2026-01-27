@@ -1,0 +1,1 @@
+Connection Type field not found - may be displayed differently
