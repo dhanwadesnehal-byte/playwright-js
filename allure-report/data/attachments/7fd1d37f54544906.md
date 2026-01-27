@@ -1,0 +1,220 @@
+# Page snapshot
+
+```yaml
+- generic [ref=e3]:
+  - 'generic "Environment: production Version: 0.3.5 d22f8edb" [ref=e4]':
+    - text: production•
+    - generic [ref=e5]: v0.3.5 d22f8edb
+  - generic [ref=e6]:
+    - banner [ref=e7]:
+      - img "ConnectHealth Logo" [ref=e9]
+      - navigation [ref=e10]:
+        - link "Dashboard" [ref=e11] [cursor=pointer]:
+          - /url: /dashboard
+        - link "Workflows" [ref=e12] [cursor=pointer]:
+          - /url: /workflows
+        - link "Connections" [ref=e13] [cursor=pointer]:
+          - /url: /connections
+        - link "Audit Logs" [ref=e14] [cursor=pointer]:
+          - /url: /audit-logs
+        - link "Settings" [ref=e15] [cursor=pointer]:
+          - /url: /settings
+      - button [ref=e17] [cursor=pointer]:
+        - img [ref=e18]
+    - generic [ref=e20]:
+      - generic [ref=e21]:
+        - generic [ref=e22]:
+          - img [ref=e24]
+          - generic [ref=e26]:
+            - generic [ref=e27]: Connection License Limit Reached
+            - paragraph [ref=e28]: You have used all 5 of your connection licenses. Please upgrade your plan to add more connections.
+            - generic [ref=e30]:
+              - img [ref=e31]
+              - generic [ref=e35]: 5 of 5 licenses used
+            - link "Upgrade Plan on AWS Marketplace" [ref=e36] [cursor=pointer]:
+              - /url: https://aws.amazon.com/marketplace/pp/prodview-r2ljn35dwpwco
+              - text: Upgrade Plan on AWS Marketplace
+              - img [ref=e37]
+        - button "Dismiss" [ref=e41] [cursor=pointer]:
+          - img [ref=e42]
+      - generic [ref=e45]:
+        - generic [ref=e46]:
+          - heading "Connections" [level=1] [ref=e47]
+          - paragraph [ref=e48]: Manage your Health System connections and integrations
+        - button "Add New Connection" [active] [ref=e49] [cursor=pointer]:
+          - img [ref=e50]
+          - text: Add New Connection
+      - generic [ref=e51]:
+        - generic [ref=e54]:
+          - img [ref=e56]
+          - textbox "Search connections..." [ref=e59]
+        - table [ref=e60]:
+          - rowgroup [ref=e61]:
+            - row "Connection ID Source Connection Name Type Status Actions" [ref=e62]:
+              - columnheader "Connection ID" [ref=e63]
+              - columnheader "Source" [ref=e64]
+              - columnheader "Connection Name" [ref=e65]
+              - columnheader "Type" [ref=e66]
+              - columnheader "Status" [ref=e67]
+              - columnheader "Actions" [ref=e68]
+          - rowgroup [ref=e69]:
+            - row "9c263d64-57fa-4755-a3fe-ab0df204ddf7 epic ECW Health Check Backend inactive Manage Test" [ref=e70]:
+              - cell "9c263d64-57fa-4755-a3fe-ab0df204ddf7" [ref=e71]:
+                - generic [ref=e72]:
+                  - code [ref=e73]: 9c263d64-57fa-4755-a3fe-ab0df204ddf7
+                  - button "Copy Connection ID" [ref=e74] [cursor=pointer]:
+                    - img [ref=e75]
+              - cell "epic" [ref=e78]:
+                - img "epic" [ref=e80]
+              - cell "ECW Health Check" [ref=e81]
+              - cell "Backend" [ref=e82]:
+                - generic [ref=e83]: Backend
+              - cell "inactive" [ref=e84]:
+                - generic [ref=e85]:
+                  - button [ref=e86] [cursor=pointer]
+                  - generic [ref=e87]: inactive
+              - cell "Manage Test" [ref=e88]:
+                - generic [ref=e89]:
+                  - button "Manage" [ref=e90] [cursor=pointer]
+                  - button "Test" [ref=e91] [cursor=pointer]
+            - row "af6e5b56-f9bf-4a01-9f2a-2a01e8b71c28 epic John Hopkins App Standalone active Manage Test" [ref=e92]:
+              - cell "af6e5b56-f9bf-4a01-9f2a-2a01e8b71c28" [ref=e93]:
+                - generic [ref=e94]:
+                  - code [ref=e95]: af6e5b56-f9bf-4a01-9f2a-2a01e8b71c28
+                  - button "Copy Connection ID" [ref=e96] [cursor=pointer]:
+                    - img [ref=e97]
+              - cell "epic" [ref=e100]:
+                - img "epic" [ref=e102]
+              - cell "John Hopkins App" [ref=e103]
+              - cell "Standalone" [ref=e104]:
+                - generic [ref=e105]: Standalone
+              - cell "active" [ref=e106]:
+                - generic [ref=e107]:
+                  - button [ref=e108] [cursor=pointer]
+                  - generic [ref=e109]: active
+              - cell "Manage Test" [ref=e110]:
+                - generic [ref=e111]:
+                  - button "Manage" [ref=e112] [cursor=pointer]
+                  - button "Test" [ref=e113] [cursor=pointer]
+            - row "31c5eb59-ed96-40b6-b2cd-efbf01e67de8 epic EVBV Embed inactive Manage Test" [ref=e114]:
+              - cell "31c5eb59-ed96-40b6-b2cd-efbf01e67de8" [ref=e115]:
+                - generic [ref=e116]:
+                  - code [ref=e117]: 31c5eb59-ed96-40b6-b2cd-efbf01e67de8
+                  - button "Copy Connection ID" [ref=e118] [cursor=pointer]:
+                    - img [ref=e119]
+              - cell "epic" [ref=e122]:
+                - img "epic" [ref=e124]
+              - cell "EVBV" [ref=e125]
+              - cell "Embed" [ref=e126]:
+                - generic [ref=e127]: Embed
+              - cell "inactive" [ref=e128]:
+                - generic [ref=e129]:
+                  - button [ref=e130] [cursor=pointer]
+                  - generic [ref=e131]: inactive
+              - cell "Manage Test" [ref=e132]:
+                - generic [ref=e133]:
+                  - button "Manage" [ref=e134] [cursor=pointer]
+                  - button "Test" [ref=e135] [cursor=pointer]
+            - row "c8d19a42-aa28-49d4-9460-0f61c243d09b epic Flowsheet Data App Backend active Manage Test" [ref=e136]:
+              - cell "c8d19a42-aa28-49d4-9460-0f61c243d09b" [ref=e137]:
+                - generic [ref=e138]:
+                  - code [ref=e139]: c8d19a42-aa28-49d4-9460-0f61c243d09b
+                  - button "Copy Connection ID" [ref=e140] [cursor=pointer]:
+                    - img [ref=e141]
+              - cell "epic" [ref=e144]:
+                - img "epic" [ref=e146]
+              - cell "Flowsheet Data App" [ref=e147]
+              - cell "Backend" [ref=e148]:
+                - generic [ref=e149]: Backend
+              - cell "active" [ref=e150]:
+                - generic [ref=e151]:
+                  - button [ref=e152] [cursor=pointer]
+                  - generic [ref=e153]: active
+              - cell "Manage Test" [ref=e154]:
+                - generic [ref=e155]:
+                  - button "Manage" [ref=e156] [cursor=pointer]
+                  - button "Test" [ref=e157] [cursor=pointer]
+            - row "f703cec7-cb37-4484-9a25-1efeac92dfa3 cerner Cerner Sandbox Connection Backend active Manage Test" [ref=e158]:
+              - cell "f703cec7-cb37-4484-9a25-1efeac92dfa3" [ref=e159]:
+                - generic [ref=e160]:
+                  - code [ref=e161]: f703cec7-cb37-4484-9a25-1efeac92dfa3
+                  - button "Copy Connection ID" [ref=e162] [cursor=pointer]:
+                    - img [ref=e163]
+              - cell "cerner" [ref=e166]:
+                - img "cerner" [ref=e168]
+              - cell "Cerner Sandbox Connection" [ref=e169]
+              - cell "Backend" [ref=e170]:
+                - generic [ref=e171]: Backend
+              - cell "active" [ref=e172]:
+                - generic [ref=e173]:
+                  - button [ref=e174] [cursor=pointer]
+                  - generic [ref=e175]: active
+              - cell "Manage Test" [ref=e176]:
+                - generic [ref=e177]:
+                  - button "Manage" [ref=e178] [cursor=pointer]
+                  - button "Test" [ref=e179] [cursor=pointer]
+            - row "48a8b045-e9e5-4bf2-bb46-a877b9cafc23 stedi Stedi Sandbox Stedi active Manage Test" [ref=e180]:
+              - cell "48a8b045-e9e5-4bf2-bb46-a877b9cafc23" [ref=e181]:
+                - generic [ref=e182]:
+                  - code [ref=e183]: 48a8b045-e9e5-4bf2-bb46-a877b9cafc23
+                  - button "Copy Connection ID" [ref=e184] [cursor=pointer]:
+                    - img [ref=e185]
+              - cell "stedi" [ref=e188]:
+                - img "stedi" [ref=e190]
+              - cell "Stedi Sandbox" [ref=e191]
+              - cell "Stedi" [ref=e192]:
+                - generic [ref=e193]: Stedi
+              - cell "active" [ref=e194]:
+                - generic [ref=e195]:
+                  - button [ref=e196] [cursor=pointer]
+                  - generic [ref=e197]: active
+              - cell "Manage Test" [ref=e198]:
+                - generic [ref=e199]:
+                  - button "Manage" [ref=e200] [cursor=pointer]
+                  - button "Test" [ref=e201] [cursor=pointer]
+            - row "fbabb6f3-c719-424d-940d-a1663343f372 cerner Nuvance CKM Dashboard Embed active Manage Test" [ref=e202]:
+              - cell "fbabb6f3-c719-424d-940d-a1663343f372" [ref=e203]:
+                - generic [ref=e204]:
+                  - code [ref=e205]: fbabb6f3-c719-424d-940d-a1663343f372
+                  - button "Copy Connection ID" [ref=e206] [cursor=pointer]:
+                    - img [ref=e207]
+              - cell "cerner" [ref=e210]:
+                - img "cerner" [ref=e212]
+              - cell "Nuvance CKM Dashboard" [ref=e213]
+              - cell "Embed" [ref=e214]:
+                - generic [ref=e215]: Embed
+              - cell "active" [ref=e216]:
+                - generic [ref=e217]:
+                  - button [ref=e218] [cursor=pointer]
+                  - generic [ref=e219]: active
+              - cell "Manage Test" [ref=e220]:
+                - generic [ref=e221]:
+                  - button "Manage" [ref=e222] [cursor=pointer]
+                  - button "Test" [ref=e223] [cursor=pointer]
+        - generic [ref=e224]:
+          - generic [ref=e226]: Page 1 • Showing 7 connections
+          - generic [ref=e227]:
+            - generic [ref=e228]:
+              - button "← Previous" [disabled] [ref=e229]
+              - button "Next →" [disabled] [ref=e230]
+            - generic [ref=e231]:
+              - generic [ref=e232]: "Per page:"
+              - button "8" [ref=e235] [cursor=pointer]:
+                - generic [ref=e236]: "8"
+                - img [ref=e237]
+    - generic [ref=e240]:
+      - generic [ref=e241]:
+        - heading "Connection Limit Reached" [level=3] [ref=e242]
+        - paragraph [ref=e243]: You've reached the maximum number of connections for your current plan.
+      - generic [ref=e244]:
+        - generic [ref=e245]:
+          - generic [ref=e246]: Current Plan
+          - generic [ref=e247]: 5 Integrations Plan
+          - generic [ref=e248]: Using 5 of 5 connections
+        - generic [ref=e249]: To add or activate more connections, please upgrade your plan on AWS Marketplace. You can choose a higher tier that fits your needs.
+      - generic [ref=e250]:
+        - button "Cancel" [ref=e251] [cursor=pointer]
+        - button "Upgrade on AWS Marketplace" [ref=e252] [cursor=pointer]:
+          - img [ref=e253]
+          - text: Upgrade on AWS Marketplace
+```

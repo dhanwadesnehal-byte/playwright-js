@@ -1,1 +1,0 @@
-Username field accepted 256 characters
